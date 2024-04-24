@@ -1,0 +1,83 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, rgba(128, 0, 128, 0.619),
+    rgba(255, 68, 0, 0.623));
+    font-size: 1.4rem;
+    height: 100vh;
+    text-align: center;
+    margin: 20px 0;
+}
+
+h1 {
+    font-size: 3.5rem;
+    font-family: "helvetica", sans-serif;
+}
+
+p {
+    font-size: 20px;
+    font-style: italic;
+    color: #ffffffc8;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+    gap: 50px;
+    justify-content: center;
+    padding: 40px;
+}
+
+.note {
+    height: 250px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    color: #fff;
+    font-size: 1.2rem;
+    font-family: 'montsero', sans-serif;
+    resize: none;
+    transition: ease .3s;
+    cursor: text;
+    border: none;
+}
+
+.note:hover {
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.50);
+}
+
+.note::placeholder {
+    color: #0000002d;
+}
+
+.note::selection {
+    background-color: #ff00005d;
+    color: black;
+}
+
+.note::-moz-selection {
+    background-color: #FF0000;
+    color: black;
+}
+
+button {
+    cursor: pointer;
+    height: 250px;
+    font-size: 5rem;
+    background: rgba(255, 255, 255, 0.306);
+    border: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    color: #00000089;
+    border-radius: 10px;
+    transition: ease .2s;
+}
+
+button:hover {
+    background: rgba(255, 255, 255, 0.644);
+}
